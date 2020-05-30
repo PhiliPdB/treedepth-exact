@@ -5,7 +5,6 @@ using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-// ReSharper disable All
 
 namespace TreeDepth {
 	internal class Program {
@@ -15,10 +14,10 @@ namespace TreeDepth {
 		private static List<short>[] _adjacencyList;
 
 		/// <summary>
-		/// Hashtable to link subgraphs with previously calculated results.
+		/// Hashtable to link sub-graphs with previously calculated results.
 		/// </summary>
 		/// <remarks>
-		/// The stored integeres are divided in two sets of 16 bits where the
+		/// The stored integers are divided in two sets of 16 bits where the
 		/// last 8 bits always represent the computed result.
 		/// If these last 8 bits are all ones (they represent the value 2^16),
 		/// the first 8 bits store the value of the bestResult parameter.
@@ -228,7 +227,7 @@ namespace TreeDepth {
 							_adjacencyList[i] = new List<short>();
 						}
 
-						// Initialyze visited bitarray
+						// Initialize visited bitarray
 						_visited  = new BitArray(_graphSize, false);
 
 						break;
@@ -575,7 +574,7 @@ namespace TreeDepth {
 		}
 
 		/// <summary>
-		/// Get hash code of a bitarray
+		/// Get hash code of a <see cref="BitArray"/>
 		/// https://stackoverflow.com/questions/3125676/generating-a-good-hash-code-gethashcode-for-a-bitarray
 		/// </summary>
 		/// <param name="array"></param>
