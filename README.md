@@ -1,6 +1,9 @@
 # Treedepth
 
-This software is part of the submission of 'exact' track of [PACE 2020](https://pacechallenge.org/2020/). It is used to compute the exact treedepth of a given graph.
+[![License](https://img.shields.io/github/license/PhiliPdB/treedepth-exact)](./LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3866006.svg)](https://doi.org/10.5281/zenodo.3866006)
+
+This software is part of the submission of 'exact' track of [PACE 2020](https://pacechallenge.org/2020/). It is used to compute the exact treedepth of a given graph. This algorithm is also part of my bachelor thesis, which was written at Utrecht University and supervised by Erik Jan van Leeuwen.
 
 
 ## Installation
